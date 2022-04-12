@@ -1,7 +1,10 @@
 import "./Navbar.css"
 import categories from "../data"
 
+
+
 function Navbar({setCategory}) {
+ 
   return (
     <div className="navbar">
         <h3 className="heading">SMART NEWS</h3>

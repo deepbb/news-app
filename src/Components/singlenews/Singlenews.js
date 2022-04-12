@@ -11,7 +11,7 @@ function Singlenews({articles}) {
         </div>
         
         <h3 className="content">{articles.title}</h3>
-        {/* <p className="contentSescription">{articles.description}</p> */}
+
         <img className="newsImg" src={articles.urlToImage} alt={articles.title} />
         <div>
         <a className="urlLink" href={articles.url} target="_blank" rel="noreferrer">
