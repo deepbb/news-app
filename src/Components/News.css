@@ -1,0 +1,86 @@
+.newsContainer{
+    margin-top: 90px;
+    display: flex;
+    overflow: hidden;
+}
+.weatherContainer{
+    margin-top: 10px;
+    width: 450px;
+    height: 200px;
+    margin-left: 20px;
+}
+.stockwrapper{
+    margin-left: 20px;
+}
+.markethead{
+    color: tomato;
+    text-align: center;
+    margin-right: 100px;
+}
+.stockItems{
+    width: 90%;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+/* .headings{
+    width: 300px;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 5px;
+    margin-left: 100px;
+} */
+.newswrapper{
+    margin-left: -100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.scrollContainer{
+    overflow: hidden;
+}
+.newshead{
+    font-size: 25px;
+    color: green;
+    font-weight: 800;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    
+    -webkit-animation: my-animation 10s linear infinite;
+    animation: my-animation 10s linear infinite;
+}
+@keyframes my-animation {
+    from {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+    to {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+  }
+.headings{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25%;
+    font-weight: 700;
+    font-size: 30px;
+}
+.headText{
+    margin-left: 10px;
+    background-color: green;
+    color: white;
+    width: 50px;
+    height: 20px;
+    align-self: center;
+    border-radius: 5px;
+}
+.inputtext{
+height: 30px;
+}

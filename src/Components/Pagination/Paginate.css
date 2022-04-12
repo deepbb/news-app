@@ -1,0 +1,15 @@
+.paginate{
+    display: flex;
+}
+.pageLists{
+    list-style: none;
+    margin-left: 20px;
+    background-color: crimson;
+    border-radius: 2px;
+    width: 20px;
+
+}
+.pageLink{
+    text-decoration: none;
+    color: white;
+}

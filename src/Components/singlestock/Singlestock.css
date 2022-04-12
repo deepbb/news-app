@@ -1,0 +1,41 @@
+.stockContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+
+.symbol{
+    font-size: 10px;
+    font-weight: 600;
+}
+.stockchange{
+    text-align: left;
+    margin-left: 20px;
+    width: 80%;
+}
+.headText{
+    font-size: 11px;
+}
+.headTextday{
+    margin-left: 50px;
+    font-size: 11px;
+}
+.elements{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 11px;
+}
+.textBlock{
+    margin-right: 350px;
+    list-style: none;
+    font-size: 11px;
+}
+.indicator{
+    margin-left: 10px;
+}
