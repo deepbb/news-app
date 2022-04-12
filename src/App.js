@@ -29,7 +29,7 @@ function App() {
 
   useEffect(()=> {
     const getNews = async ()=> {
-        const res = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=bb9dcd9a7bf94f97b4983ff01c97a942`)
+        const res = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`)
         setarticle(res.data.articles)
     }
     getNews()
