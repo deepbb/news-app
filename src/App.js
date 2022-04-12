@@ -29,8 +29,13 @@ function App() {
 
   useEffect(()=> {
     const getNews = async ()=> {
+      try {
         const res = await axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=${process.env.REACT_APP_API_KEY}`)
         setarticle(res.data.articles)
+      } catch (err) {
+        console.log(err);
+      }
+        
     }
     getNews()
 },[category])
