@@ -1,7 +1,6 @@
 .stockContainer{
     width: 100%;
     display: flex;
-    align-items: center;
     margin-left: 10px;
 
 }
@@ -30,12 +29,35 @@
     align-items: center;
     justify-content: space-between;
     font-size: 11px;
+    margin-bottom: 15px;
 }
+
 .textBlock{
     margin-right: 350px;
+    margin-top: 15px;
     list-style: none;
     font-size: 11px;
 }
 .indicator{
     margin-left: 10px;
+}
+
+@media screen  and (max-width: 480px) {
+    .elements{
+        margin-left: 10px;
+       
+    }
+   
+    .indicestexthigh{
+        margin-right: 0;
+    }
+    .indiceswrapper{
+        margin-left: 50px;
+    }
+    .textBlock{
+        margin-left: 50px;
+    }
+   .indicesText{
+       margin-left: 100px;
+   }
 }

@@ -41,3 +41,17 @@ background-image: url("/src/images/climate2.jpg");
     color:black;
     margin-top: 15px;
 }
+
+@media screen  and (max-width: 480px) {
+    .weatherSection{
+        width: 70%;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    .input{
+        width:180px;
+    }
+    .btn{
+        height: 20px;
+    }
+}

@@ -22,3 +22,15 @@
     width: 20px;
 
 }
+
+@media screen  and (max-width: 480px) {
+    .newsPaginate{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+    }
+    .numbers{
+        margin-right: 30%;
+    }
+}

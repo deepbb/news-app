@@ -8,10 +8,7 @@ function Singlestock({stocks ,currentPosts}) {
     <div>
         <span className="symbol">{stocks.symbol}</span>
         </div>
-        <div>
-       {/* <li style={{color:"green"}} className="indicestext"><span>{(indices.change).toFixed(2)}</span></li> */}
-       </div>
-       <div>
+       <div className="items">
        <li className="indicestexthigh"><span>{stocks.lastPrice}</span></li>
        </div>
        </div>

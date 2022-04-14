@@ -30,7 +30,6 @@ function App() {
     const getNews = async ()=> {
       try {
         const res = await axios.get(`https://saurav.tech/NewsAPI/top-headlines/category/${category}/in.json`)
-        console.log(res.data);
         setarticle(res.data.articles)
       } catch (err) {
         console.log(err);

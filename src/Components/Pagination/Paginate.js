@@ -9,7 +9,7 @@ function Paginate({postPerPage , totalPosts , paginate ,}) {
     }
     
   return (
-    <div>
+    <div className="page">
         <ul className="paginate">
             {pageNumbers.map(number => (
                 <li className="pageLists" key={number}>

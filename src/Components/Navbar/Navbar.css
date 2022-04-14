@@ -8,19 +8,46 @@
     position: fixed;
     top: 0;
 }
-.select{
-    font-weight: 900;
-    color:yellow;
-}
+
 .heading{
     color: white;
 }
-.listItems{
-    margin-left: 10px;
-    margin-bottom: 20px;
+.closeBtn{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 1200px;
     border-style: none;
+    background-color: red;
+    color: white;
+    height: 25px;
+    width: 100px;
     border-radius: 5px;
-    background-color: yellow;
     cursor: pointer;
-    height: 20px;
+    z-index: 999;
 }
+
+
+
+
+@media screen  and (max-width: 480px) {
+    .navbar{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 999;
+    }
+    .heading{
+        font-size: 14px;
+        margin-left: 5px;
+        padding-top: 5px;
+        margin-top: 20px;
+    }
+    .select{
+        margin-top: -2px;
+    }
+    .closeBtn{
+        position: absolute;
+        margin-left: 200px;
+    }
+  }

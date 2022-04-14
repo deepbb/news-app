@@ -1,20 +1,34 @@
+import { useState } from "react"
+import Category from "../Category"
 import "./Navbar.css"
-import categories from "../data"
 
+function Navbar( {setCategory}) {
 
+  const [modal ,setModal] = useState(false)
 
-function Navbar({setCategory}) {
+  const handleClick = ()=> {
+    setModal(true)
+  }
+  const closeModal = ()=> {
+    setModal(false)
+  }
+
  
   return (
     <div className="navbar">
         <h3 className="heading">SMART NEWS</h3>
-  <div className="categortList">
-  <p className="select">News Categories</p>
-    {categories.map((text , index )=> (
-      <button className="listItems"  onClick={() => setCategory(text)}
-            key={index}>{text}</button>
-    ))}
-    </div>
+        {
+          modal &&  
+        <Category setCategory={setCategory} />
+        }
+        {
+          modal ? <button className="closeBtn" onClick={closeModal}>close</button> : 
+        <button className="closeBtn" onClick={handleClick}>Categories</button>
+
+        }
+
+        
+  
     </div>
   )
 }

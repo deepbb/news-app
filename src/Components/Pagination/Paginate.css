@@ -13,3 +13,12 @@
     text-decoration: none;
     color: white;
 }
+
+@media screen  and (max-width: 480px) {
+    .page{
+        margin-right: 60%;
+    }
+    .pageLists{
+        margin-right: 20px;
+    }
+}
